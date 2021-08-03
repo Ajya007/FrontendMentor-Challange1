@@ -32,6 +32,7 @@ a, a:visited, a:hover {
   position: relative;
   z-index: 1;
   border-bottom-left-radius: 15%;
+  overflow-x: hidden;
 }
 
 .bg-svg {
@@ -42,6 +43,7 @@ a, a:visited, a:hover {
   height: 100%;
   background-position: 25% 50%;
   z-index: 0;
+  overflow: hidden;
 }
 
 .global-btn {
