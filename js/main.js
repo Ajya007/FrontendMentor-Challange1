@@ -1,5 +1,6 @@
 const hamburger=document.querySelector(".menu-btn");
 const nav=document.querySelector("nav");
+const overlay=document.querySelector(".overlay");
 
 hamburger.addEventListener('click',toggleMenu);
 
@@ -10,11 +11,15 @@ function toggleMenu(){
     if(showMenu){
         hamburger.classList.add('close')
         nav.classList.add('close')
+        overlay.classList.add('add')
+       
+
 
     }
     else{
         hamburger.classList.remove('close')
         nav.classList.remove('close')
+        overlay.classList.remove('add')
     }
 
 }
