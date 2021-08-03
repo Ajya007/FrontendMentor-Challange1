@@ -586,7 +586,7 @@ header {
 @media only screen and (max-width: 467px) {
   .art-layer {
     padding-bottom: 4.25rem;
-    padding-top: 9.375rem;
+    padding-top: 12.5rem;
     position: relative;
     z-index: 2;
   }
