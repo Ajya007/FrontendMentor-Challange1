@@ -2,7 +2,7 @@
 
 footer{
     background-color: $veryDarkBlackBlue;
-    border-top-right-radius:100px;
+    border-top-right-radius:6.25rem;
     font-family: 'Ubuntu', sans-serif; 
     h2{
         color: $white;
@@ -53,6 +53,7 @@ footer{
 
 
     footer{
+        margin-top: 7.1875rem;        ;
        .sections{
         display: flex;
         padding-left: 10.2135rem;
