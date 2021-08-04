@@ -500,9 +500,6 @@ header {
   .showcase {
     overflow: hidden;
   }
-  body {
-    background-color: cadetblue;
-  }
   header {
     padding-left: 3rem;
     padding-right: 3rem;
@@ -632,9 +629,6 @@ header {
 }
 
 @media only screen and (min-width: 469px) and (max-width: 768px) {
-  body {
-    background-color: aquamarine;
-  }
   .future {
     font-family: 'Overpass', sans-serif;
   }
@@ -910,8 +904,8 @@ header {
     z-index: 2;
   }
   .art .art-boxes .art-box1 {
-    padding-top: 6.25rem;
-    padding-bottom: 6.25rem;
+    padding-top: 4.25rem;
+    padding-bottom: 4.25rem;
     padding-left: 1rem;
     padding-right: 1rem;
   }
@@ -1055,6 +1049,7 @@ header {
     background-position: 80%;
   }
   .desktop .d-boxes .d-box2 {
+    margin-top: 5.375rem;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
@@ -1107,6 +1102,7 @@ header {
     background-position: 80%;
   }
   .desktop .d-boxes .d-box2 {
+    margin-top: 5.375rem;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
