@@ -1,0 +1,312 @@
+//global
+
+.desktop{
+    font-family: 'Overpass', sans-serif;
+
+     .d-boxes{
+        line-height: 1.6;
+
+         .d-box1{
+             background-image: url(../images/illustration-laptop-mobile.svg);
+             background-repeat: no-repeat;
+             background-size: contain;
+             min-height: 300px;
+
+         }
+         .d-box2{
+             
+             h2{
+                color:$veryDarkBlue;
+             }
+             p{
+                color:$veryDarkDesaturatedBlue;
+             }
+            
+         }
+     }
+}
+
+//Mobile
+
+
+@media only screen and (max-width: 467px) {
+
+
+
+
+
+    .desktop{
+    
+         .d-boxes{
+           
+
+             .d-box2{
+                 
+            padding-left:2.125rem;
+            padding-right: 2.125rem;
+
+                text-align: center;
+
+                h2{
+                    color: $veryDarkBlue;
+                    margin-bottom: 1.625rem;
+                 }
+                .d-part1{
+                    margin-top: 2.5rem;
+                    margin-bottom: 2.5rem;
+                 }
+                 .d-part2{
+                    margin-bottom: 2.5rem;
+                 }
+
+             }
+             
+         }
+    }
+
+
+
+
+}
+
+
+
+
+
+//desktop
+
+@media only screen and (min-width: 468px) {
+
+
+
+    .desktop{
+        font-family: 'Overpass', sans-serif;
+         .d-boxes{
+             display: flex;
+             gap: 1rem;
+             padding-top: 11.875rem;
+             padding-bottom: 11.875rem;
+             &::before{
+                content: "";
+                position: absolute;
+                width: 50%;
+                left: 0;
+                top:0rem;
+                height: 100%;
+                z-index: 2;
+                background-image: url(../images/illustration-laptop-desktop.svg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position:82%;
+        
+            }
+             .d-box1{
+                background-image: none;
+                 flex-basis: 50%;
+                 width: 100%;
+                 height: 100%;
+                 margin-top: 0rem;
+
+                
+    
+             }
+             .d-box2{
+         
+                 flex-basis: 50%;
+                 padding-right: 10.9375rem;
+                 padding-left: 7.5rem;
+                 
+                 h2{
+                     font-size: 1.75rem;
+                     margin-bottom: 2.375rem;
+                     
+                 }
+                 p{
+                     font-size: 1rem;
+                 }
+                 .d-part1{
+                     margin-bottom: 5.375rem;
+                 }
+                 .d-part2{
+                   
+                 }
+
+             }
+         }
+    }
+    
+
+}
+
+
+
+//for tablets
+
+//for tablets
+
+@media only screen and (min-width: 469px) and (max-width: 768px) {
+  
+
+
+    .desktop{
+
+        
+         .d-boxes{
+            padding-top: 2.875rem;
+            padding-bottom: 2.875rem;
+             display: flex;
+             gap: 1rem;
+             margin-top: 2rem;
+            
+             &::before{
+                content: "";
+                background-image:none;
+        
+            }
+             .d-box1{
+                background-image:url(../images/illustration-laptop-desktop.svg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                 order: 1;
+                 flex-basis: 50%;
+                 width: 100%;
+                 min-height: 43.75rem;
+                 margin-top: 0rem;
+             
+                 background-position: 80%;
+                
+                 
+
+                
+    
+             }
+             .d-box2{
+            
+                 order: 2;
+                 flex-basis: 50%;
+                 padding-left: 1rem;
+                 padding-right: 1rem;
+                 
+                 h2{
+                     font-size: 1.75rem;
+                     margin-bottom: 1.375rem;
+                     
+                 }
+                 p{
+                     font-size: 1rem;
+                 }
+                 .d-part1{
+                     margin-bottom: 4.375rem;
+                 }
+                 .d-part2{
+                     margin-bottom: 4.875rem;
+                 }
+
+             }
+         }
+    }
+
+
+
+}
+
+//for small screen laptops
+
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+
+    
+    .desktop{
+
+        
+        .d-boxes{
+           padding-top: 2.875rem;
+           padding-bottom: 2.875rem;
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+           
+            &::before{
+               content: "";
+               background-image:none;
+       
+           }
+            .d-box1{
+               background-image:url(../images/illustration-laptop-desktop.svg);
+               background-repeat: no-repeat;
+               background-size: cover;
+                order: 1;
+                flex-basis: 50%;
+                width: 100%;
+                min-height: 43.75rem;
+                margin-top: 0rem;
+            
+                background-position: 80%;
+               
+                
+
+               
+   
+            }
+            .d-box2{
+           
+                order: 2;
+                flex-basis: 50%;
+                padding-left: 1rem;
+                padding-right: 1rem;
+                
+                h2{
+                    font-size: 1.75rem;
+                    margin-bottom: 1.375rem;
+                    
+                }
+                p{
+                    font-size: 1rem;
+                }
+                .d-part1{
+                    margin-bottom: 4.375rem;
+                }
+                .d-part2{
+                    margin-bottom: 4.875rem;
+                }
+
+            }
+        }
+   }
+
+
+
+    
+
+}
+
+
+
+//for  larger devices
+
+@media only screen and (min-width: 1441px) {
+
+
+
+    .desktop{
+         .d-boxes{
+            &::before{
+                content: "";
+                position: absolute;
+                width: 50%;
+                left: 0;
+                top:0rem;
+                height: 100%;
+                z-index: 2;
+                background-image: url(../images/illustration-laptop-desktop.svg);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position:0% 55%;
+                
+        
+            }
+        }
+    }
+
+}

@@ -5,8 +5,8 @@
   
     z-index: 1;
     background-color: $veryDarkGrayishBlue;
-    border-bottom-left-radius:15%;
-    border-top-right-radius:15%;
+    border-bottom-left-radius:10%;
+    border-top-right-radius:10%;
     color: $white;
     font-family: 'Overpass', sans-serif;
    
@@ -28,6 +28,7 @@
         padding-top:12.5rem;
         position: relative;
         z-index: 2;
+       
     }
 
 
@@ -48,10 +49,14 @@
         }
       
         .art-boxes{
-            padding-top: 12.5rem;
-            padding-bottom: 6.25rem;
-            padding-left: 1.75rem;
-            padding-right: 1.75rem;
+            .art-box1{
+                padding-top: 12.5rem;
+                padding-bottom: 6.25rem;
+                padding-left: 1.75rem;
+                padding-right: 1.75rem;
+
+            }
+           
             h1{
                 font-size: 1.75rem;
                 margin-bottom: 1.9375rem;
@@ -72,36 +77,51 @@
 @media only screen and (min-width: 468px) {
 
 
+
     .art-layer{
         padding-bottom: 3.125rem;
         padding-top:3.125rem;
         position: relative;
         z-index: 2;
+  
     }
 
 
     .art{
 
-        &::before{
-            content: "";
-            position: absolute;
-            top:0;
-            background-image: url("../images/illustration-phones.svg");
-            background-repeat: no-repeat;
-            width: 100%;
-            height: 110%;
-            background-size: contain;
-            z-index: 2;
-          
-            
-        }
+      
       
         .art-boxes{
-            padding-top: 7.5rem;
-            padding-bottom: 6.875rem;
             text-align: left;
             display: grid;
             grid-template-columns: 1fr 1fr;
+            z-index: 2;
+
+            .art-box1{
+                padding-top: 12.5rem;
+                padding-bottom: 6.25rem;
+                padding-left: 1.75rem;
+                padding-right: 1.75rem;
+
+            }
+            
+            .empty{
+                &::before{
+                content:"";
+                position: absolute;
+                background-image: url("../images/illustration-phones.svg");
+                background-repeat: no-repeat;
+                width: 50%;
+                height: 122%;
+                transform: translateY(-9%);
+                top: 0;
+                background-size: 90% 110%;
+                z-index: 1;
+         
+            }
+              
+                
+            }
             
             
             h1{
@@ -116,6 +136,134 @@
          
         }
     }
+
+
+}
+//tablets
+
+@media only screen and (min-width: 469px) and (max-width: 768px) {
+
+
+
+
+    .art-layer{
+        padding-bottom: 3.125rem;
+        padding-top:3.125rem;
+        position: relative;
+        z-index: 2;
+  
+    }
+
+
+    .art{
+
+      
+      
+        .art-boxes{
+
+            .art-box1{
+                padding-top: 4.25rem;
+                padding-bottom: 4.25rem;
+                padding-left: 1rem;
+                padding-right: 1rem;
+
+            }
+            
+            .empty{
+                &::before{
+                content:"";
+                position: absolute;
+                background-image: url("../images/illustration-phones.svg");
+                background-repeat: no-repeat;
+                width: 50%;
+                height: 122%;
+                transform: translateY(-9%);
+                top: 0;
+                background-size: 100% 110%;
+                z-index: 1;
+         
+            }
+              
+                
+            }
+            
+            
+            h1{
+        
+                margin-bottom: 1.25rem;
+            
+            }
+          
+        }
+    }
+
+
+
+
+
+}
+
+
+//for small screen laptops
+
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+
+    
+    .art-layer{
+        padding-bottom: 3.125rem;
+        padding-top:3.125rem;
+        position: relative;
+        z-index: 2;
+  
+    }
+
+
+    .art{
+
+      
+      
+        .art-boxes{
+
+            .art-box1{
+                padding-top: 6.25rem;
+                padding-bottom: 6.25rem;
+                padding-left: 1rem;
+                padding-right: 1rem;
+
+            }
+            
+            .empty{
+                &::before{
+                content:"";
+                position: absolute;
+                background-image: url("../images/illustration-phones.svg");
+                background-repeat: no-repeat;
+                width: 50%;
+                height: 122%;
+                transform: translateY(-9%);
+                top: 0;
+                background-size: 100% 110%;
+                z-index: 1;
+         
+            }
+              
+                
+            }
+            
+            
+            h1{
+        
+                margin-bottom: 1.25rem;
+            
+            }
+          
+        }
+    }
+
+
+
 
 
 }

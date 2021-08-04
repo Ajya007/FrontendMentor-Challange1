@@ -1,15 +1,14 @@
 .container{
-    max-width: 1000px;
+    max-width: 1440px;
     margin:auto;
+    position: relative;
+
 }
 
 .showcase{
     background-image: linear-gradient(to right, $veryLightRed , $lightred);
-    max-width: 100vw;
-    position: relative;
-
-    z-index: 1;
-    border-bottom-left-radius:15%;
+    max-width: 100vw;;
+    border-bottom-left-radius:10%;
   
     
    
@@ -17,7 +16,7 @@
 
 
 .overlay{
- 
+    display: none;
     position: fixed;
     opacity: 0;
     min-height: 100vh;
@@ -26,6 +25,7 @@
     background-image: linear-gradient(to bottom,$veryDarkBlackBlue,$veryDarkDesaturatedBlue);
     transition: all 0.5s ease-out;
     &.add{
+        display: block;
         opacity: 0.4;
     }
 
@@ -35,11 +35,12 @@
     background-image: url("../images/bg-pattern-intro.svg");
     background-repeat: no-repeat;
     position: absolute;
-    width: 100vw;
+    width: 100%;
     height: 100%;
+    left: 0;
     background-position: 25% 50%;
     z-index: 0;
-   
+    
 }
 
 
@@ -67,9 +68,6 @@ header{
     max-width: 100vw;
     font-family: 'Ubuntu', sans-serif;
   
-    nav{
-        
-    }
     
   
    
@@ -112,6 +110,9 @@ header{
 }
 
 
+
+//mobile
+
 @media only screen and (max-width: 467px) {
 
 
@@ -120,13 +121,16 @@ header{
     }
 
     .bg-svg{
-        width: 100vw;
+        background-image: url("../images/bg-pattern-intro.svg");
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 100%;
         height: 100%;
-        background-position: 35% 45%;
-     
-       
+        left: 0;
+        background-position: 20% 50%;
+        z-index: 0;
+        
     }
-
    
     .ubtn{
         padding: 1rem 2.5rem;
@@ -303,9 +307,12 @@ header{
 
 }
 
-
+//laptops
 
 @media only screen and (min-width: 468px) {
+    .overlay{
+        display: none;
+    }
 
     .arrow1,.arrow2,.arrow3{
         color:$white;
@@ -347,6 +354,8 @@ header{
         display: flex;
         padding-top: 3.75rem;
         padding-bottom: 3.75rem;
+        padding-left: 10.3125rem;
+        padding-right: 10.3125rem;
         font-family: 'Ubuntu', sans-serif;
         font-weight: 500;
         .logo{
@@ -371,7 +380,7 @@ header{
             .class-drp{
                 display: flex;
                 font-size: 1rem;
-                gap: 1rem;
+                gap: 1.5rem;
                 margin-left: 3.75rem;
                 align-items: center;
                 
@@ -461,3 +470,77 @@ header{
   
 }
 
+
+//tablets
+
+@media only screen and (min-width: 469px) and (max-width: 768px) {
+
+    .showcase{
+       overflow:hidden;
+ 
+       
+    }
+
+
+    header{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        nav{
+            .class-drp{
+                margin-left: 2.75rem;
+               
+                
+            }
+            .user{
+                gap: 0rem;
+                
+            }
+        }
+    
+    }
+
+
+    .ubtn{
+        padding: 1rem 1rem;
+     
+    }
+
+
+}
+
+
+//for small screen laptops
+
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .showcase{
+        overflow:hidden;  
+     }
+ 
+
+    body{
+        background-color: cadetblue;
+    }
+
+    header{
+        padding-left: 3rem;
+        padding-right: 3rem;
+        nav{
+            .class-drp{
+                margin-left: 2.75rem;
+               
+                
+            }
+        }
+    
+    }
+
+
+    .ubtn{
+        padding: 1rem 1.5rem;
+      
+       
+    }
+    
+}
